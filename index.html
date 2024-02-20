@@ -9,9 +9,308 @@
     <!-- daisyUI & tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .inter-font {
+            font-family: "Inter", sans-serif;
+        }
+
+        .raleway-font {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="">
+    <header class="container mx-auto mt-10">
+        <div class="navbar bg-base-100  ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 raleway-font font-medium text-[#030712B3]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl font-extrabold raleway-font">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 raleway-font font-medium text-[#030712B3]">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100]  font-bold">Bus <img
+                        src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- banner section -->
+
+        <section class="mt-10">
+            <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-3xl pb-40 pt-20">
+                        <h1 class="mb-5 text-6xl font-extrabold raleway-font mt-24">End-to-End Travel with <br> <span
+                                class="text-[#1DD100] leading-3">P Paribahan</span></h1>
+                        <p class="mb-5 inter-font mt-10 inter-font"> Yes, you can run unit tests and view the results
+                            directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+
+                        <button
+                            class="btn btn-primary mt-5 bg-[#1DD100] text-black px-7 text-xl font-bold raleway-font">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- offer section -->
+        <section class=" container text-center mx-auto mt-20">
+            <h3 class="text-4xl font-bold raleway-font">Best offers for you</h3>
+            <div class="flex justify-center gap-10 mt-10">
+                <div class="bg-[#FFBF0F]  flex p-20 px-10 space-x-20 rounded-3xl items-center">
+                    <div class="inter-font border-r-4 pr-20 border-dashed">
+                        <h4 class=" font-bold text-4xl text-[#030712CC]">15% OFF</h4>
+                        <h6 class="font-semibold text-xl">
+                            on your next purchase
+                        </h6>
+                        <p class="font-semibold">use by January 2024</p>
+                    </div>
+                    <div class="raleway-font">
+                        <h4 class="text-3xl text-[#030712] font-bold">NEW15</h4>
+                        <p class="font-medium text-xl text-[#03071266] ">Coupon Code</p>
+                    </div>
+
+                </div>
+                <div class="bg-[#F78C9C] flex px-10 p-20 space-x-20 rounded-3xl items-center">
+                    <div class="inter-font space-x-5 border-r-4 pr-20 border-dashed">
+                        <h4 class=" font-bold text-4xl text-[#030712CC]">20% OFF
+
+                        </h4>
+                        <h6 class="font-semibold text-xl">
+                            on your next purchase
+                        </h6>
+                        <p class="font-semibold"> use by January 2024</p>
+                    </div>
+                    <div class="raleway-font">
+                        <h4 class="text-3xl text-[#030712] font-bold">Couple 20</h4>
+                        <p class="font-medium text-xl text-[#03071266] ">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10">
+
+                <button class="btn btn-outline btn-success text-xl text-[#1DD100]">See All Offers</button>
+            </div>
+
+        </section>
+    </header>
+    <main class="mb-40 bg-[#F7F8F8]">
+
+
+        <!-- p.H section -->
+        <section class="bg-[#F7F8F8] border-t-4 border-[#1DD100] mt-20 rounded-t-3xl text-center pt-20 ">
+            <div>
+                <h2 class="text-4xl font-bold raleway-font text-[#030712]">P.H Paribahan</h2>
+                <p class="inter-font pt-10">Yes, you can run unit tests and view the results directly within the app.
+                    The integrated <br> testing features allow for a streamlined .</p>
+            </div>
+
+            <div class="card card-side bg-base-100 shadow-xl container  mx-auto mt-10 rounded-3xl bg-white">
+                <div class="w-3/4 pt-4">
+                    <div class="flex justify-between px-10">
+                        <div class="text-center flex  gap-0">
+                            <img class=" mx-auto px-0" src="images/bus-logo.png" alt="">
+                            <div class="mx-0">
+                                <h2 class="raleway-font text-3xl font-bold">Greenline Paribahan</h2>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <button class="btn inter-font font-medium  text-[#1DD100]"><img src="images/seat-green.png"
+                                    alt="">40 Seats left</button>
+                        </div>
+
+                    </div>
+                    <div class="bg-[#F7F8F8] mx-10 p-5 rounded-3xl my-10">
+                        <div class="flex justify-between px-10 font-semibold raleway-font">
+                            <p class="text-[#03071299]">Route</p>
+                            <h6 class="text-[#030712]">Dhaka - Sylhet</h6>
+                        </div>
+                        <hr class="border-dashed border-2 mt-4">
+                        <div class="flex justify-between px-10 font-semibold raleway-font mt-4">
+                            <p class="text-[#03071299]">Route</p>
+                            <h6 class="text-[#030712]">Dhaka - Sylhet</h6>
+                        </div>
+                        <hr class="border-dashed border-2 mt-4">
+                        <div class="flex justify-between mt-4">
+                            <h3 class="bg-[#0307120D] rounded-3xl px-4">Boarding Point - Laxmipur</h3>
+                            <h3 class="bg-[#0307120D] rounded-3xl px-4">Dropping Point - Bogura</h3>
+                            <h3 class="bg-[#0307120D] rounded-3xl px-4">Est. Time - 11 Hour</h3>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="raleway-font text-center  px-20  w-1/4 flex items-center">
+                    <div class="space-y-2">
+                        <img class=" mx-auto" src="images/fare.png" alt="">
+                    <h3 class="text-3xl font-bold ">550 Taka </h3>
+                    <p>Per Seat</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ticket section -->
+        <section class="container mx-auto mt-6 rounded-3xl">
+            <div class="bg-white px-10 pt-10 rounded-3xl flex justify-between">
+                <div class="w-2/3 px-4">
+                    <h3 class="text-2xl font-semibold raleway-font mt-4">Select Your Seat</h3>
+                    <hr class="border-b-2 border-dashed mt-4">
+                    <div class="flex  justify-between mt-4">
+                        <div>
+                            <div class="flex"><img src="images/seat-gray.png" alt="">
+                                <h4 class="font-medium inter-font">Available</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex"><img src="images/seat-green-filled.png" alt="">
+                                <h4 class="font-medium inter-font text-[#1DD100]">Selected</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-b-2 border-dashed mt-4">
+                    <div class="flex justify-end pr-10 pt-3 mb-3">
+                        <button class="btn btn-active px-14 w-4"><img src="images/download (5).jpeg" alt=""></button>
+                    </div>
+                    <div class="flex gap-16">
+
+                        <table class=" w-full text-center">
+                            <td class=" "><button class="btn btn-active px-8">A1</button></td>
+                            <td class=""><button class="btn btn-active px-8">A2</button></td>
+                        </table>
+                        <table class=" w-full text-center">
+                            <td class=" "><button class="btn btn-active px-8">A3</button></td>
+                            <td class=""><button class="btn btn-active px-8">A4</button></td>
+                        </table>
+    
+                    </div>
+                    <div class="flex gap-16 mt-4">
+
+                        <table class=" w-full text-center">
+                            <td class=" "><button class="btn btn-active px-8">B1</button></td>
+                            <td class=""><button class="btn btn-active px-8">B2</button></td>
+                        </table>
+                        <table class=" w-full text-center">
+                            <td class=" "><button class="btn btn-active px-8">B3</button></td>
+                            <td class=""><button class="btn btn-active px-8">B4</button></td>
+                        </table>
+    
+                    </div>
+                </div>
+                <div class="border-l-4 w-1/3 pl-4 pt-4 border-dashed">
+                    <h3 class="text-2xl font-semibold raleway-font">Select Your Seat</h3>
+                    <hr class="border-b-2 border-dashed mt-4">
+                    <div class="bg-[#F7F8F8] p-4 my-4 rounded-3xl">
+                        <div class="flex justify-between">
+                            <h3 class="font-medium inter-font">Seat<button class="btn btn-xs bg-[#1DD100] text-white">2</button></h3>
+                            <h3 class="font-medium inter-font">Class</h3>
+                            <h3 class="font-medium inter-font">Price</h3>
+                        </div>
+                        <hr class="border-b-2 border-dashed my-4">
+                        <div class="flex justify-between inter-font text-[#03071299]">
+                            <h3>C2</h3>
+                            <h3>Economy</h3>
+                            <h3>550</h3>
+                        </div>
+                        <div class="flex justify-between inter-font text-[#03071299]">
+                            <h3>C2</h3>
+                            <h3>Economy</h3>
+                            <h3>550</h3>
+                        </div>
+                        <hr class="my-2 border-b-2">
+                        <div class="flex-col items-center">
+                            <div class="flex justify-between">
+                                <h3 class="font-medium inter-font">Total Price</h3>
+                                <h3 class="font-medium inter-font">BDT 1100</h3>
+                            </div>
+                            <div class="flex my-4 relative">
+                                <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full  border-none " />
+                                <button class="btn bg-[#1DD100] text-white text-sm font-semibold absolute right-1">Apply</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <h3 class="font-medium text-[#030712] inter-font">Grand Total</h3>
+                            <h3 class="font-medium text-[#030712] inter-font">BDT 1100</h3>
+                        </div>
+
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-semibold inter-font text-[#030712]">Passenger Name*</h3>
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Enter your name" />
+                        </label>
+                        <h3 class="font-semibold inter-font text-[#030712]">Phone Number*</h3>
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="number" class="grow" placeholder="Enter your mobile number" />
+                        </label>
+                        <h3 class="font-semibold inter-font text-[#030712]">Email ID</h3>
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="email" class="grow" placeholder="Enter your email ID" />
+
+                        </label>
+                        <button class="btn w-full bg-[#1DD100] text-white text-xl font-extrabold">Next</button>
+                    </div>
+                    <div class="flex justify-around py-4">
+                        <p class="border-b-2">Terms and Conditions</p>
+                            <p class="border-b-2">Cancellation Policy</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer p-10 bg-[#030712] text-neutral-content flex justify-around">
+        <aside>
+            <h3 class="text-3xl  font-semibold raleway-font">P-Ticket</h3>
+            <p class="text-gray-500">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Download our app</h6>
+            <div class="gap-4 flex justify-between border">
+                <img src="images/playstore.png" alt="">
+                <div class="">
+                    <h4>GET IN ON</h4>
+                    <h2>Google Play</h2>
+                </div>
+            </div>
+        </nav>
+    </footer>
 
 </body>
 
